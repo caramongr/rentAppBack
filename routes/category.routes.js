@@ -10,7 +10,7 @@ module.exports = app => {
   // Retrieve a single Category with categoryId
   app.get("/categories/:countryId", categories.findOne);
 
-  // Update a Category with categoryId
+  // Update a Category with categoryIdd
   app.put("/categories/:countryId", categories.update);
 
   // Delete a Category with categoryId
