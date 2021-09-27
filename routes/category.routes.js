@@ -8,13 +8,13 @@ module.exports = app => {
   app.get("/categories", categories.findAll);
 
   // Retrieve a single Category with categoryId
-  app.get("/categories/:countryId", categories.findOne);
+  app.get("/categories/:categoryId", categories.findOne);
 
   // Update a Category with categoryIdd
-  app.put("/categories/:countryId", categories.update);
+  app.put("/categories/:categoryId", categories.update);
 
   // Delete a Category with categoryId
-  app.delete("/categories/:countryId", categories.delete);
+  app.delete("/categories/:categoryId", categories.delete);
 
   // Create a new Category
   app.delete("/categories", categories.deleteAll);

@@ -6,6 +6,7 @@ const Category = function(category) {
   // this.name = customer.name;
   // this.active = customer.active;
   this.title=category.title;
+  this.summary=category.summary;
   this.description=category.description;
   this.photo=category.photo;
   this.priority=category.priority;

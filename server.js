@@ -31,6 +31,8 @@ require("./routes/region.routes.js")(app);
 
 require("./routes/category.routes.js")(app);
 
+require("./routes/page.routes.js")(app);
+
 // set port, listen for requests
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
