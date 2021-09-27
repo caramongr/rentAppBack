@@ -21,7 +21,7 @@ exports.create = (req, res) => {
   });
 
   // Save Page in the database
- Article.create(page, (err, data) => {
+ Article.create(article, (err, data) => {
     if (err)
       res.status(500).send({
         message:
