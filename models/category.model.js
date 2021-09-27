@@ -62,8 +62,8 @@ Category.getAll = result => {
 
 Category.updateById = (id, category, result) => {
   sql.query(
-    "UPDATE categories SET title = ?, description = ?, photo = ?, priority = ?, metakey = ?, metadesc = ?, url = ? WHERE id = ?",
-    [category.title, category.description, category.photo, category.priority, category.metakey, category.metadesc, category.url, id],
+    "UPDATE categories SET title = ?,  summary = ?, description = ?, photo = ?, priority = ?, metakey = ?, metadesc = ?, url = ? WHERE id = ?",
+    [category.title,  category.summary, category.description, category.photo, category.priority, category.metakey, category.metadesc, category.url, id],
     (err, res) => {
       if (err) {
         console.log("error: ", err);
